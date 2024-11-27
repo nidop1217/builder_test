@@ -16,7 +16,6 @@
       "settingUri": "message-actions/open-widgets-action-setting"
     }
   ],
-  "dependency": ["jimu-core", "jimu-arcgis", "jimu-for-builder"],
   "defaultSize": {
     "height": 54,
     "width": 200,
