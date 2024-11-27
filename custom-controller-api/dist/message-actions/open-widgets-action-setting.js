@@ -1,0 +1,31 @@
+System.register(["jimu-core","jimu-ui/advanced/setting-components","jimu-ui","jimu-for-builder","jimu-layouts/layout-runtime","jimu-theme","jimu-ui/advanced/style-setting-components","jimu-ui/basic/color-picker"],(function(e,t){var i={},o={},n={},l={},a={},r={},d={},s={};return{setters:[function(e){i.Immutable=e.Immutable,i.React=e.React,i.ReactRedux=e.ReactRedux,i.css=e.css,i.hooks=e.hooks,i.polished=e.polished},function(e){o.SettingRow=e.SettingRow,o.SettingSection=e.SettingSection},function(e){n.MultiSelect=e.MultiSelect,n.Option=e.Option,n.Select=e.Select,n.defaultMessages=e.defaultMessages},function(){},function(e){a.searchUtils=e.searchUtils},function(e){r.styled=e.styled},function(){},function(){}],execute:function(){e((()=>{var e={5508:e=>{e.exports='<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"><path fill="#000" d="M8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6.5 7.5A.5.5 0 0 1 7 7h1.5v4.5h1a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1h1V8H7a.5.5 0 0 1-.5-.5"></path><path fill="#000" fill-rule="evenodd" d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16m0-1A7 7 0 1 0 8 1a7 7 0 0 0 0 14" clip-rule="evenodd"></path></svg>'},2946:(e,t,i)=>{"use strict";i.d(t,{useControlledWidgets:()=>d});var o,n=i(9244),l=(i(4108),i(9298),i(1496));!function(e){e.Stack="STACK",e.SideBySide="SIDEBYSIDE"}(o||(o={}));i(4321),i(6393);var a,r=i(1888);!function(e){e[e.Circle=0]="Circle",e[e.Rectangle=1]="Rectangle"}(a||(a={}));i(5562),i(3242),i(4337);i(5508);r.styled.div`
+  width: 100%;
+  height: 1px;
+  background-color: var(--ref-palette-neutral-500);
+  margin: 16px 0;
+`,n.css`
+    font-size: 13px;
+    font-weight: lighter;
+    .setting-row-item {
+      width: 100%;
+      display: flex;
+      margin-top: 0.5rem;
+      > span.jimu-radio {
+        flex-shrink: 0;
+        margin-top: 0.1rem;
+      }
+      > label {
+        margin-bottom: 0;
+      }
+    }
+    .jimu-multi-select {
+      width: 100%;
+      > .jimu-dropdown {
+        width: 100%;
+      }
+      > .jimu-menu-item {
+        width: 100%;
+        height: ${n.polished.rem(26)};
+      }
+    }
+  `;const d=(e,t)=>{const i=(e=>{var t,i,o;let n=(null!==(o=null===(i=null===(t=null==e?void 0:e.order)||void 0===t?void 0:t.asMutable)||void 0===i?void 0:i.call(t))&&void 0!==o?o:[]).map((t=>{var i;return null===(i=e.content)||void 0===i?void 0:i[t]}));return n=n.filter((e=>e&&e.id&&e.widgetId&&!e.isPending)),n.map((e=>e.id)).map((t=>{var i,o;return null===(o=null===(i=e.content)||void 0===i?void 0:i[t])||void 0===o?void 0:o.widgetId}))})(n.ReactRedux.useSelector((i=>{var o,n,a,r;const d=null===(a=null===(n=null===(o=(i=i.appStateInBuilder).appConfig.widgets)||void 0===o?void 0:o[e])||void 0===n?void 0:n.layouts)||void 0===a?void 0:a[t],s=i.browserSizeMode,c=i.appConfig.mainSizeMode,u=l.searchUtils.findLayoutId(d,s,c);return null===(r=i.appConfig.layouts)||void 0===r?void 0:r[u]}))),o=n.ReactRedux.useSelector((e=>e.appStateInBuilder.appConfig.widgets));return(0,n.Immutable)(i||[]).map((e=>{var t;return{label:null===(t=o[e])||void 0===t?void 0:t.label,value:e}}))}},3242:(e,t,i)=>{"use strict";i.d(t,{bC:()=>o});const o="controller";var n;!function(e){e.TopLeft="TOP_LEFT",e.TopRight="TOP_RIGHT",e.BottomLeft="BOTTOM_LEFT",e.BottomRight="BOTTOM_RIGHT",e.TopCenter="TOP_CENTER",e.BottomCenter="BOTTOM_CENTER",e.MiddleLeft="MIDDLE_LEFT",e.MiddleRight="MIDDLE_RIGHT",e.MiddleCenter="MIDDLE_CENTER"}(n||(n={}));n.TopRight,document.body,document},6393:(e,t,i)=>{"use strict";i.d(t,{A:()=>o});const o={_widgetLabel:"Widget Controller",behavior:"Behavior",openWidget:"How many widgets can be opened",displayType:"Display type",iconStyle:"Icon",showIconLabel:"Label",iconSizeOverride:"Size",iconInterval:"Spacing",textFormatOverride:"Text",iconBackgroundOverride:"Icon",openStart:"Open widgets on loading",widgetsSelected:"{widgetNumber} widgets selected",appearanceTip:"Select the widgets inside the Widget Controller, and customize their icons, labels, or styles to change their appearances.",widgetPanelArrangment:"Widget panel arrangement",panelFloating:"Floating",indicator:"Indicator",messageAction_openWidget:"Open widget"}},9244:e=>{"use strict";e.exports=i},4108:e=>{"use strict";e.exports=l},1496:e=>{"use strict";e.exports=a},1888:e=>{"use strict";e.exports=r},4321:e=>{"use strict";e.exports=n},9298:e=>{"use strict";e.exports=o},5562:e=>{"use strict";e.exports=d},4337:e=>{"use strict";e.exports=s}},t={};function c(i){var o=t[i];if(void 0!==o)return o.exports;var n=t[i]={exports:{}};return e[i](n,n.exports,c),n.exports}c.d=(e,t)=>{for(var i in t)c.o(t,i)&&!c.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},c.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),c.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},c.p="";var u={};return(()=>{"use strict";c.r(u),c.d(u,{default:()=>a});var e=c(9244),t=c(9298),i=c(4321),o=c(2946),n=c(3242),l=c(6393);function a(a){const{actionId:r,widgetId:d,onSettingChange:s}=a,c=a.config||(0,e.Immutable)({widgetIds:[],controllerId:d}),u=(0,o.useControlledWidgets)(d,n.bC),g=e.React.useCallback(((e,t)=>{s({actionId:r,config:c.set("widgetIds",[t.props.value])})}),[r,c,s]),p=e.React.useCallback(((e,t,i)=>{s({actionId:r,config:c.set("widgetIds",i)})}),[r,c,s]),m=e.ReactRedux.useSelector((e=>{var t;const i=e.appStateInBuilder.appConfig.widgets[d].config;return null===(t=null==i?void 0:i.behavior)||void 0===t?void 0:t.onlyOpenOne})),v=e.hooks.useLatest(c);e.React.useEffect((()=>{const e=v.current;m&&e.widgetIds.length>1&&s({actionId:r,config:e.set("widgetIds",[e.widgetIds[0]])}),m&&0===e.widgetIds.length&&u.length>0&&s({actionId:r,config:e.set("widgetIds",[u[0].value])})}),[r,v,u,m,s]);const f=e.hooks.useTranslation(l.A,i.defaultMessages),h=e.React.useCallback((e=>f("numSelected",{number:e.length})),[f]);return e.React.createElement("div",null,e.React.createElement(t.SettingSection,null,e.React.createElement(t.SettingRow,{label:f("messageAction_openWidget"),flow:"wrap"},m&&e.React.createElement(i.Select,{value:c.widgetIds[0],onChange:g},u.map((t=>e.React.createElement(i.Option,{value:t.value,key:t.value},t.label)))),!m&&e.React.createElement(i.MultiSelect,{items:u,values:c.widgetIds,className:"pt-1 custom-multiselect",fluid:!0,displayByValues:h,onClickItem:p}))))}})(),u})())}}}));
